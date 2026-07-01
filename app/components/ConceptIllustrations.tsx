@@ -108,7 +108,7 @@ export function FeatureIllustration({ kind }: { kind: FeatureKind }) {
     return (
       <IllustrationFrame>
         <svg viewBox="0 0 120 76" role="img" aria-hidden="true">
-          <rect className="ink-line-fill" x="30" y="16" width="60" height="48" rx="10" />
+          <rect className="ink-line-fill" x="30" y="16" width="60" height="48" />
           <path className="ink-line" d="M42 31h36M42 44h22" />
           <path className="ink-line" d="M72 50l6 6 12-16" />
         </svg>
