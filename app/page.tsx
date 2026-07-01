@@ -1,7 +1,9 @@
 import Link from "next/link";
 import {
   ArrowRight,
+  BadgeCheck,
   Camera,
+  CalendarDays,
   CheckCircle2,
   LockKeyhole,
   PackageCheck,
@@ -10,47 +12,47 @@ import {
   RotateCcw,
   ShieldCheck
 } from "lucide-react";
-import { AtmosphericHero, FeatureAura, ReceiptFlowIllustration } from "./components/ConceptIllustrations";
+import { FeatureIllustration, HeroIllustration, ReceiptFlowIllustration } from "./components/ConceptIllustrations";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
-import { mailto, site } from "./lib/site";
+import { site } from "./lib/site";
 
 const features = [
   {
     title: "Screenshot import",
     text: "Capture an order page, receipt, shipping update, or return label and turn it into organized details.",
     icon: Camera,
-    aura: "mint" as const
+    kind: "screenshot" as const
   },
   {
     title: "Return windows",
     text: "See what can still go back, what needs action soon, and which store policy applies.",
     icon: RotateCcw,
-    aura: "peach" as const
+    kind: "return" as const
   },
   {
     title: "Refund follow-up",
     text: "Track credits, return labels, package drop-offs, and support notes until the money lands.",
     icon: RefreshCw,
-    aura: "lavender" as const
+    kind: "refund" as const
   },
   {
     title: "Receipt memory",
     text: "Save receipts, warranty dates, order numbers, and proof of purchase for the things that matter.",
     icon: ReceiptText,
-    aura: "sky" as const
+    kind: "receipt" as const
   },
   {
     title: "Warranty dates",
     text: "Remember coverage windows for electronics, appliances, bags, shoes, and the purchases worth protecting.",
-    icon: ShieldCheck,
-    aura: "rose" as const
+    icon: CalendarDays,
+    kind: "warranty" as const
   },
   {
     title: "Private AI review",
     text: "AI suggests structured details, then you review and edit before trusting the record.",
     icon: LockKeyhole,
-    aura: "mint" as const
+    kind: "privacy" as const
   }
 ];
 
@@ -81,11 +83,11 @@ export default function Home() {
             <p className="eyebrow">Private purchase memory for iPhone</p>
             <h1>{site.tagline}</h1>
             <p className="hero-subtitle">
-              Screenshot any order. Orderly remembers deliveries, returns, refunds, receipts, and warranties.
+              Save proof from any order. Orderly keeps deliveries, return windows, refunds, receipts, and warranties easy to find.
             </p>
             <div className="hero-actions">
-              <a className="button primary" href={mailto(site.supportEmail, "Join the Orderly iOS launch list")}>
-                <span>Join waitlist</span>
+              <a className="button primary" href={site.appUrl}>
+                <span>Get Orderly</span>
                 <ArrowRight size={18} />
               </a>
               <Link className="button secondary" href="/privacy">
@@ -94,7 +96,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <AtmosphericHero />
+          <HeroIllustration />
         </section>
 
         <section className="section intro-band">
@@ -118,7 +120,7 @@ export default function Home() {
               return (
                 <article className={`feature-card feature-${index + 1}`} key={feature.title}>
                   <div className="feature-art">
-                    <FeatureAura aura={feature.aura} />
+                    <FeatureIllustration kind={feature.kind} />
                   </div>
                   <div className="feature-body">
                     <Icon size={20} />
@@ -167,7 +169,7 @@ export default function Home() {
               <p>AI helps read receipts and confirmations, then shows editable results before saving.</p>
             </article>
             <article>
-              <ShieldCheck size={20} />
+              <BadgeCheck size={20} />
               <h3>Deletion is supported</h3>
               <p>Privacy, account deletion, and support paths are published clearly for App Store review and users.</p>
             </article>
@@ -190,13 +192,13 @@ export default function Home() {
 
         <section className="cta-section">
           <div>
-            <p className="eyebrow">Launching on iOS</p>
+            <p className="eyebrow">Available on iOS</p>
             <h2>Keep the order trail after checkout.</h2>
-            <p>Join the launch list, ask a support question, or review Orderly’s privacy and legal pages.</p>
+            <p>Open Orderly, ask a support question, or review the privacy and legal pages.</p>
           </div>
           <div className="cta-actions">
-            <a className="button primary" href={mailto(site.supportEmail, "Join the Orderly iOS launch list")}>
-              <span>Join waitlist</span>
+            <a className="button primary" href={site.appUrl}>
+              <span>Get Orderly</span>
               <ArrowRight size={18} />
             </a>
             <Link className="button secondary" href="/support">

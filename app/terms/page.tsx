@@ -31,7 +31,7 @@ export default function TermsPage() {
         {
           title: "Acceptable use",
           body: [
-            "Do not use Orderly to upload content you do not have permission to use, attempt to access another person’s account, reverse engineer the service, disrupt app operation, or violate applicable law."
+            "Do not use Orderly to upload content you do not have permission to use, attempt to access another person's account, reverse engineer the service, disrupt app operation, or violate applicable law."
           ]
         },
         {

@@ -12,7 +12,7 @@ export default function LegalPage() {
     <PolicyPage
       label="Legal"
       title="Legal Notices"
-      intro="This page collects notices that help users, reviewers, and partners understand Orderly’s status and contact paths."
+      intro="This page collects notices that help users, reviewers, and partners understand the status of Orderly and its contact paths."
       sections={[
         {
           title: "Independent app",

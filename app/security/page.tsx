@@ -30,7 +30,7 @@ export default function SecurityPage() {
         {
           title: "Responsible disclosure",
           body: [
-            `If you believe you found a security issue, email ${site.legalEmail} with a clear description, steps to reproduce, and the potential impact. Please do not access, modify, or delete another user’s data.`
+            `If you believe you found a security issue, email ${site.legalEmail} with a clear description, steps to reproduce, and the potential impact. Please do not access, modify, or delete another user's account data.`
           ]
         }
       ]}

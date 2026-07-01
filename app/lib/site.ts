@@ -4,6 +4,7 @@ export const site = {
   description:
     "Orderly helps iPhone shoppers remember deliveries, returns, refunds, receipts, and warranty dates from order screenshots.",
   url: "https://orderly.app",
+  appUrl: "https://orderly.app",
   supportEmail: "support@orderly.app",
   legalEmail: "legal@orderly.app",
   privacyEmail: "privacy@orderly.app",

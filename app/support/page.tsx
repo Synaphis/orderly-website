@@ -25,8 +25,8 @@ export default function SupportPage() {
           title: "Common questions",
           body: [
             "If an imported screenshot looks wrong, edit the extracted fields before saving or delete the record and import again.",
-            "If a reminder appears wrong, check the store policy and the saved order date. Orderly’s reminders are organizational prompts, not guarantees from the retailer.",
-            "If a refund is late, use Orderly’s notes and receipts to contact the store, carrier, or bank that controls the refund."
+            "If a reminder appears wrong, check the store policy and the saved order date. Orderly reminders are organizational prompts, not guarantees from the retailer.",
+            "If a refund is late, use Orderly notes and receipts to contact the store, carrier, or bank that controls the refund."
           ]
         },
         {
