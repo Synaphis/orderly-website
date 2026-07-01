@@ -4,7 +4,7 @@ import { site } from "../lib/site";
 
 export const metadata: Metadata = {
   title: "Legal",
-  description: "Legal notices for Subly."
+  description: "Legal notices for Orderly."
 };
 
 export default function LegalPage() {
@@ -12,12 +12,12 @@ export default function LegalPage() {
     <PolicyPage
       label="Legal"
       title="Legal Notices"
-      intro="This page collects notices that help users, reviewers, and partners understand Subly’s status and contact paths."
+      intro="This page collects notices that help users, reviewers, and partners understand Orderly’s status and contact paths."
       sections={[
         {
           title: "Independent app",
           body: [
-            "Subly is an independent application. It is not affiliated with, endorsed by, or sponsored by Apple, any retailer, delivery carrier, payment network, or warranty provider unless stated in writing."
+            "Orderly is an independent application. It is not affiliated with, endorsed by, or sponsored by Apple, any retailer, delivery carrier, payment network, or warranty provider unless stated in writing."
           ]
         },
         {
@@ -29,7 +29,7 @@ export default function LegalPage() {
         {
           title: "Order information",
           body: [
-            "Subly organizes information you provide. Final return eligibility, refund timing, delivery status, and warranty coverage are determined by the relevant store, carrier, bank, or manufacturer."
+            "Orderly organizes information you provide. Final return eligibility, refund timing, delivery status, and warranty coverage are determined by the relevant store, carrier, bank, or manufacturer."
           ]
         },
         {

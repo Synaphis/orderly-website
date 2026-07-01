@@ -4,7 +4,7 @@ import { site } from "../lib/site";
 
 export const metadata: Metadata = {
   title: "Security",
-  description: "Subly security and responsible disclosure."
+  description: "Orderly security and responsible disclosure."
 };
 
 export default function SecurityPage() {
@@ -12,12 +12,12 @@ export default function SecurityPage() {
     <PolicyPage
       label="Security"
       title="Security"
-      intro="Subly handles order records that can contain personal purchase information, so security is part of the product design."
+      intro="Orderly handles order records that can contain personal purchase information, so security is part of the product design."
       sections={[
         {
           title: "Security practices",
           body: [
-            "Subly uses access controls, secure transport, service provider controls, and limited data access practices to protect account and order information.",
+            "Orderly uses access controls, secure transport, service provider controls, and limited data access practices to protect account and order information.",
             "We aim to collect only the information needed to provide purchase tracking, reminders, support, diagnostics, and account functions."
           ]
         },

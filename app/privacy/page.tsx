@@ -4,7 +4,7 @@ import { site } from "../lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Subly privacy policy for App Store review and users."
+  description: "Orderly privacy policy for App Store review and users."
 };
 
 export default function PrivacyPage() {
@@ -12,14 +12,14 @@ export default function PrivacyPage() {
     <PolicyPage
       label="Privacy"
       title="Privacy Policy"
-      intro="This policy explains what Subly collects, how order screenshots are processed, and how users can access or delete their data."
+      intro="This policy explains what Orderly collects, how order screenshots are processed, and how users can access or delete their data."
       sections={[
         {
           title: "Information we collect",
           body: [
-            "Subly may collect account information such as an email address, support messages, and app settings.",
-            "When you import a screenshot, receipt, order confirmation, delivery update, return page, or refund note, Subly may process the image and extracted order details you provide. This can include store names, product names, prices, order numbers, tracking numbers, return deadlines, delivery estimates, refund status, warranty dates, and notes you add.",
-            "Subly may collect basic device and app diagnostics to understand crashes, performance, and support issues."
+            "Orderly may collect account information such as an email address, support messages, and app settings.",
+            "When you import a screenshot, receipt, order confirmation, delivery update, return page, or refund note, Orderly may process the image and extracted order details you provide. This can include store names, product names, prices, order numbers, tracking numbers, return deadlines, delivery estimates, refund status, warranty dates, and notes you add.",
+            "Orderly may collect basic device and app diagnostics to understand crashes, performance, and support issues."
           ]
         },
         {
@@ -32,8 +32,8 @@ export default function PrivacyPage() {
         {
           title: "Sharing and service providers",
           body: [
-            "Subly does not sell personal information.",
-            "We may share limited information with service providers that help operate the app, such as secure hosting, database, authentication, analytics, crash reporting, email support, and AI processing providers. These providers are used only to deliver and maintain Subly.",
+            "Orderly does not sell personal information.",
+            "We may share limited information with service providers that help operate the app, such as secure hosting, database, authentication, analytics, crash reporting, email support, and AI processing providers. These providers are used only to deliver and maintain Orderly.",
             "We may disclose information if required by law, to protect rights and safety, or in connection with a merger, acquisition, or similar transaction."
           ]
         },
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
         {
           title: "Children",
           body: [
-            "Subly is not intended for children under 13. If you believe a child provided personal information, contact us so we can review and delete it where appropriate."
+            "Orderly is not intended for children under 13. If you believe a child provided personal information, contact us so we can review and delete it where appropriate."
           ]
         },
         {

@@ -1,12 +1,12 @@
 export const site = {
-  name: "Subly",
-  tagline: "Your private order inbox.",
+  name: "Orderly",
+  tagline: "A calmer memory for every order.",
   description:
-    "Subly helps iPhone shoppers remember deliveries, returns, refunds, receipts, and warranty dates from order screenshots.",
-  url: "https://subly.app",
-  supportEmail: "support@subly.app",
-  legalEmail: "legal@subly.app",
-  privacyEmail: "privacy@subly.app",
+    "Orderly helps iPhone shoppers remember deliveries, returns, refunds, receipts, and warranty dates from order screenshots.",
+  url: "https://orderly.app",
+  supportEmail: "support@orderly.app",
+  legalEmail: "legal@orderly.app",
+  privacyEmail: "privacy@orderly.app",
   lastUpdated: "June 30, 2026"
 };
 

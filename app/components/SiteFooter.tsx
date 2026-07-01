@@ -27,7 +27,7 @@ export function SiteFooter() {
           </Link>
         ))}
       </nav>
-      <a className="footer-mail" href={mailto(site.supportEmail, "Subly website inquiry")}>
+      <a className="footer-mail" href={mailto(site.supportEmail, "Orderly website inquiry")}>
         <Mail size={16} />
         {site.supportEmail}
       </a>

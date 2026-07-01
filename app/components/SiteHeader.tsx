@@ -12,7 +12,7 @@ const links = [
 export function SiteHeader() {
   return (
     <header className="site-header">
-      <Link className="brand" href="/" aria-label="Subly home">
+      <Link className="brand" href="/" aria-label="Orderly home">
         <span className="brand-mark">
           <PackageCheck size={16} strokeWidth={2.2} />
         </span>
@@ -25,7 +25,7 @@ export function SiteHeader() {
           </Link>
         ))}
       </nav>
-      <a className="header-action" href={mailto(site.supportEmail, "Subly support")}>
+      <a className="header-action" href={mailto(site.supportEmail, "Orderly support")}>
         <LifeBuoy size={16} />
         <span>Support</span>
       </a>
