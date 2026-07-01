@@ -21,7 +21,7 @@ export function PolicyPage({ label, title, intro, sections }: PolicyPageProps) {
       <SiteHeader />
       <main className="policy-main">
         <div className="policy-hero">
-          <p className="eyebrow">{label}</p>
+          <p className="policy-label">{label}</p>
           <h1>{title}</h1>
           <p>{intro}</p>
           <span>Last updated {site.lastUpdated}</span>

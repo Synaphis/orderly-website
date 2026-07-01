@@ -18,8 +18,8 @@
   --gradient-sky: #a8c8e8;
   --gradient-rose: #e8b8c4;
   --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.04);
-  --radius-card: 16px;
-  --radius-large: 24px;
+  --radius-card: 12px;
+  --radius-large: 12px;
   --radius-control: 8px;
   --max: 1200px;
 }
@@ -89,7 +89,7 @@ svg {
   height: 32px;
   place-items: center;
   border: 1px solid var(--hairline);
-  border-radius: 999px;
+  border-radius: var(--radius-control);
   background: var(--surface-strong);
   color: var(--ink);
 }
@@ -103,7 +103,7 @@ svg {
 .site-nav a,
 .header-action {
   min-height: 40px;
-  border-radius: 999px;
+  border-radius: var(--radius-control);
   color: var(--body);
   font-size: 0.94rem;
   font-weight: 500;
@@ -151,7 +151,7 @@ svg {
   min-height: 28px;
   margin: 0 0 1.1rem;
   padding: 0.2rem 0.7rem;
-  border-radius: 999px;
+  border-radius: var(--radius-control);
   background: var(--surface-strong);
   color: var(--primary);
   font-size: 0.74rem;
@@ -221,7 +221,7 @@ h3 {
   gap: 0.5rem;
   min-height: 44px;
   padding: 0 1.2rem;
-  border-radius: 999px;
+  border-radius: var(--radius-control);
   font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0;
@@ -334,7 +334,7 @@ h3 {
 .proof-lines i {
   display: block;
   height: 9px;
-  border-radius: 999px;
+  border-radius: 3px;
   background: var(--hairline-strong);
 }
 
@@ -415,7 +415,7 @@ h3 {
   margin-bottom: 0.7rem;
   place-items: center;
   border: 1px solid var(--hairline);
-  border-radius: 999px;
+  border-radius: var(--radius-control);
   color: var(--primary);
 }
 
@@ -479,7 +479,7 @@ h3 {
 .mini-receipt strong {
   display: block;
   height: 5px;
-  border-radius: 999px;
+  border-radius: 3px;
   background: var(--hairline-strong);
 }
 
@@ -669,7 +669,7 @@ h3 {
   min-height: 38px;
   padding: 0 0.85rem;
   border: 1px solid var(--hairline);
-  border-radius: 999px;
+  border-radius: var(--radius-control);
   background: var(--surface-card);
   color: var(--body);
   font-weight: 500;
@@ -735,22 +735,34 @@ h3 {
 }
 
 .policy-main {
-  width: min(var(--max), calc(100% - 32px));
+  width: min(880px, calc(100% - 32px));
   margin: 0 auto;
 }
 
 .policy-hero {
-  max-width: 780px;
-  padding: clamp(4rem, 8vw, 6rem) 0 3rem;
+  padding: clamp(3rem, 7vw, 4.5rem) 0 1.5rem;
+  border-bottom: 1px solid var(--hairline);
 }
 
 .policy-hero h1 {
   max-width: 720px;
-  font-size: clamp(3rem, 7vw, 5.6rem);
+  margin-bottom: 0.8rem;
+  font-family: inherit;
+  font-size: clamp(2.2rem, 5vw, 3.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .policy-hero p {
+  max-width: 680px;
   font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.policy-label {
+  margin-bottom: 0.85rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 600;
 }
 
 .policy-hero span {
@@ -760,23 +772,22 @@ h3 {
 }
 
 .policy-layout {
-  display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  gap: clamp(1.5rem, 4vw, 3rem);
-  align-items: start;
   padding-bottom: clamp(4rem, 8vw, 7rem);
 }
 
 .policy-layout aside {
-  position: sticky;
-  top: 90px;
-  display: grid;
-  gap: 0.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--hairline);
 }
 
 .policy-layout aside a {
-  padding: 0.55rem 0;
+  min-height: 36px;
+  padding: 0.45rem 0;
   color: var(--body);
+  font-size: 0.94rem;
   font-weight: 500;
 }
 
@@ -785,15 +796,12 @@ h3 {
 }
 
 .policy-card {
-  padding: clamp(1.25rem, 3vw, 2.2rem);
-  border: 1px solid var(--hairline);
-  border-radius: var(--radius-card);
-  background: var(--surface-card);
+  padding: clamp(1.75rem, 4vw, 2.75rem) 0 0;
 }
 
 .policy-card section {
-  padding-bottom: 1.65rem;
-  margin-bottom: 1.65rem;
+  padding-bottom: 1.45rem;
+  margin-bottom: 1.45rem;
   border-bottom: 1px solid var(--hairline);
 }
 
@@ -804,7 +812,11 @@ h3 {
 }
 
 .policy-card h2 {
-  font-size: clamp(1.5rem, 2.6vw, 2.15rem);
+  margin-bottom: 0.7rem;
+  font-family: inherit;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 600;
+  letter-spacing: 0;
 }
 
 .policy-card p {
@@ -829,14 +841,7 @@ h3 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .policy-layout {
-    grid-template-columns: 1fr;
-  }
-
   .policy-layout aside {
-    position: static;
-    display: flex;
-    flex-wrap: wrap;
     gap: 0.3rem 1rem;
   }
 }
