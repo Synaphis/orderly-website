@@ -1,11 +1,9 @@
 import Link from "next/link";
 import {
   ArrowRight,
-  BadgeCheck,
   Camera,
   CalendarDays,
   CheckCircle2,
-  LockKeyhole,
   PackageCheck,
   ReceiptText,
   RefreshCw,
@@ -65,7 +63,28 @@ const steps = [
   }
 ];
 
-const audiences = ["Fashion hauls", "Beauty restocks", "Holiday gifts", "Warranty purchases", "Problem orders"];
+const purchaseTypes = [
+  {
+    title: "Fashion hauls",
+    text: "Keep sizes, return dates, labels, and refund status together when one order becomes five decisions."
+  },
+  {
+    title: "Beauty restocks",
+    text: "Save receipts, reorder proof, delivery notes, and support screenshots for items you buy again."
+  },
+  {
+    title: "Holiday gifts",
+    text: "Remember what arrived, what was returned, and which receipts still matter after the rush."
+  },
+  {
+    title: "Warranty purchases",
+    text: "Hold onto order numbers, coverage dates, and proof of purchase for electronics and appliances."
+  },
+  {
+    title: "Problem orders",
+    text: "Track refund promises, support notes, carrier updates, and bank follow-up in one place."
+  }
+];
 
 export default function Home() {
   return (
@@ -148,40 +167,38 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section privacy-section" id="privacy">
+        <section className="section information-section">
           <div>
-            <p className="eyebrow">Privacy by design</p>
-            <h2>Your orders can be personal. Orderly treats them that way.</h2>
+            <h2>Order details without digging through five different places.</h2>
           </div>
-          <div className="privacy-panel">
-            <article>
-              <LockKeyhole size={20} />
-              <h3>You choose what to import</h3>
-              <p>Orderly starts with screenshots and order details you decide to add. It does not need your inbox.</p>
-            </article>
-            <article>
-              <Camera size={20} />
-              <h3>AI is reviewable</h3>
-              <p>AI helps read receipts and confirmations, then shows editable results before saving.</p>
-            </article>
-            <article>
-              <BadgeCheck size={20} />
-              <h3>Deletion is supported</h3>
-              <p>Privacy, account deletion, and support paths are published clearly for App Store review and users.</p>
-            </article>
+          <div className="information-copy">
+            <p>
+              Use Orderly when a purchase creates follow-up: a tracking page, a return deadline, a refund promise, a
+              receipt, or a warranty date.
+            </p>
+            <p>
+              The landing page can stay simple here. This side can hold a small SVG illustration later, while the text
+              explains the product in plain language now.
+            </p>
           </div>
         </section>
 
         <section className="section audience-section">
           <div className="section-head">
             <h2>One timeline for the purchases that scatter across every store.</h2>
+            <p>
+              Orderly is for the orders that keep producing little tasks after checkout. It keeps the proof and the next action together.
+            </p>
           </div>
-          <div className="audience-strip">
-            {audiences.map((item) => (
-              <span key={item}>
-                <PackageCheck size={16} />
-                {item}
-              </span>
+          <div className="purchase-list">
+            {purchaseTypes.map((item) => (
+              <article key={item.title}>
+                <PackageCheck size={18} />
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </div>
+              </article>
             ))}
           </div>
         </section>

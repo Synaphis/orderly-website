@@ -4,7 +4,7 @@ import { mailto, site } from "../lib/site";
 
 const links = [
   { href: "/#features", label: "Features" },
-  { href: "/#privacy", label: "Privacy" },
+  { href: "/privacy", label: "Privacy" },
   { href: "/support", label: "Support" },
   { href: "/terms", label: "Terms" }
 ];
