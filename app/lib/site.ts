@@ -5,9 +5,9 @@ export const site = {
     "Orderly helps iPhone shoppers remember deliveries, returns, refunds, receipts, and warranty dates from order screenshots.",
   url: "https://orderly.app",
   appUrl: "https://orderly.app",
-  supportEmail: "support@orderly.app",
-  legalEmail: "legal@orderly.app",
-  privacyEmail: "privacy@orderly.app",
+  supportEmail: "support@synetrasystems.com",
+  legalEmail: "legal@synetrasystems.com",
+  privacyEmail: "privacy@synetrasystems.com",
   lastUpdated: "June 30, 2026"
 };
 
