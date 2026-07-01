@@ -240,7 +240,7 @@ export default function Home() {
                     marginBottom: 18,
                     fontSize: 12,
                     letterSpacing: "0.12em",
-                    color: "#777169"
+                    color: "#8b6262"
                   }}
                 >
                   {String(index + 1).padStart(2, "0")}
@@ -342,11 +342,11 @@ export default function Home() {
         <section
           style={{
             background: "#fff",
-            color: "#0c0a09",
+            color: "#541414",
             margin: 0,
             padding: "88px 24px 96px",
             textAlign: "center",
-            borderTop: "1px solid #e7e5e4"
+            borderTop: "1px solid #d0d0c8"
           }}
         >
           <p
@@ -355,7 +355,7 @@ export default function Home() {
               fontSize: 12,
               letterSpacing: "0.14em",
               textTransform: "uppercase",
-              color: "#777169"
+              color: "#8b6262"
             }}
           >
             Orderly for iPhone
@@ -369,7 +369,7 @@ export default function Home() {
               lineHeight: 1.05,
               letterSpacing: "-0.02em",
               fontWeight: 520,
-              color: "#0c0a09"
+              color: "#541414"
             }}
           >
             Keep every order trail in one place.
@@ -381,7 +381,7 @@ export default function Home() {
               margin: "18px auto 0",
               fontSize: 16,
               lineHeight: 1.65,
-              color: "#4e4e4e"
+              color: "#5e3434"
             }}
           >
             Track deliveries, returns, refunds, receipts, and warranty dates
@@ -405,13 +405,13 @@ export default function Home() {
                 minHeight: 46,
                 padding: "0 22px",
                 borderRadius: 0,
-                background: "#0c0a09",
+                background: "#541414",
                 color: "#fff",
                 fontSize: 14,
                 fontWeight: 600,
                 letterSpacing: "-0.01em",
                 textDecoration: "none",
-                border: "1px solid #0c0a09",
+                border: "1px solid #541414",
                 boxShadow: "none"
               }}
             >
