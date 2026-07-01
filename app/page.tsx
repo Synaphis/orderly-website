@@ -47,12 +47,6 @@ const features = [
     text: "Remember coverage windows for electronics, appliances, bags, shoes, and the purchases worth protecting.",
     icon: CalendarDays,
     kind: "warranty" as const
-  },
-  {
-    title: "Private AI review",
-    text: "AI suggests structured details, then you review and edit before trusting the record.",
-    icon: LockKeyhole,
-    kind: "privacy" as const
   }
 ];
 
@@ -114,18 +108,20 @@ export default function Home() {
               Every feature starts from the same simple idea: save the proof once, then let Orderly keep the important dates visible.
             </p>
           </div>
-          <div className="feature-grid">
-            {features.map((feature, index) => {
+          <div className="feature-list">
+            {features.map((feature) => {
               const Icon = feature.icon;
               return (
-                <article className={`feature-card feature-${index + 1}`} key={feature.title}>
-                  <div className="feature-art">
-                    <FeatureIllustration kind={feature.kind} />
-                  </div>
-                  <div className="feature-body">
-                    <Icon size={20} />
+                <article className="feature-item" key={feature.title}>
+                  <div className="feature-copy">
+                    <span className="feature-icon">
+                      <Icon size={18} />
+                    </span>
                     <h3>{feature.title}</h3>
                     <p>{feature.text}</p>
+                  </div>
+                  <div className="feature-art">
+                    <FeatureIllustration kind={feature.kind} />
                   </div>
                 </article>
               );

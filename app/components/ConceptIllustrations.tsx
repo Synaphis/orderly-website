@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-type FeatureKind = "screenshot" | "return" | "refund" | "receipt" | "warranty" | "privacy";
+type FeatureKind = "screenshot" | "return" | "refund" | "receipt" | "warranty";
 
 const flow = [
   { label: "Capture", detail: "Save the proof", mark: "01" },
@@ -116,15 +116,7 @@ export function FeatureIllustration({ kind }: { kind: FeatureKind }) {
     );
   }
 
-  return (
-    <IllustrationFrame>
-      <svg viewBox="0 0 120 76" role="img" aria-hidden="true">
-        <rect className="ink-line-fill" x="32" y="33" width="56" height="31" rx="10" />
-        <path className="ink-line" d="M45 33v-8c0-9 6-15 15-15s15 6 15 15v8" />
-        <path className="ink-line" d="M60 44v10" />
-      </svg>
-    </IllustrationFrame>
-  );
+  return null;
 }
 
 export function ReceiptFlowIllustration() {
